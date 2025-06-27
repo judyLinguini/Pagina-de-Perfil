@@ -1,0 +1,61 @@
+{
+    "fullName": "Fernando Machado Corbo",
+    "profession": "Desarrollador Jr.",
+    "email": "mail@mail.com",
+    "aboutMe": "Soy un entusiasta del desarrollo web con pasión por crear soluciones innovadoras. Tengo experiencia en diversas tecnologías y siempre estoy buscando aprender y crecer en el campo de la programación. Mi enfoque principal es el desarrollo full-stack, con un interés particular en la interfaz de usuario y la experiencia del usuario.",
+    "skills": [
+        "Git y GitHub",
+        "Bootstrap",
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "C#",
+        "Java",
+        "Python",
+        "Laravel",
+        "Figma",
+        "ArcMap",
+        "MySQL",
+        "Desarrollo Ágil"
+    ],
+    "education": [
+        {
+            "institution": "UTU",
+            "degree": "Bachillerato en Informática",
+            "dates": "2023 - 2025"
+        },
+        {
+            "institution": "Alianza",
+            "degree": "Testing Funcional",
+            "dates": "2023"
+        },
+        {
+            "institution": "BIOS",
+            "degree": "Desarrollo de Videojuegos",
+            "dates": "2016 - 2017"
+        },
+        {
+            "institution": "FCEA",
+            "degree": "Contador (Incompleto)",
+            "dates": "2014 - 2018"
+        }
+    ],
+    "projects": [
+        {
+            "name": "Sistema de Gestión de Biblioteca",
+            "description": "Un sistema CRUD para la gestión de libros y usuarios. Permite registrar, buscar, actualizar y eliminar información. Desarrollado como proyecto educativo.",
+            "technologies": ["Java", "Swing", "MySQL"],
+            "repoLink": "https://github.com/"
+        },
+        {
+            "name": "Sitio Web Personal (Este Mismo)",
+            "description": "Este es el sitio web que estás viendo. Desarrollado para presentar mi currículum y portafolio.",
+            "technologies": ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
+            "repoLink": "https://github.com/judyLinguini/Pagina-de-Perfil"
+        }
+    ],
+    "socialLinks": [
+        { "name": "GitHub", "url": "https://github.com/judyLinguini", "icon": "fab fa-github" },
+        { "name": "LinkedIn", "url": "https://www.linkedin.com/", "icon": "fab fa-linkedin" }
+    ]
+}

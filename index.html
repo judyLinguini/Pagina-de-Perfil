@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Currículum y portafolio personal de [Tu Nombre Completo]. Descubre mi experiencia, habilidades y proyectos.">
+    <meta name="author" content="[Tu Nombre Completo]">
+    <title>Fernando Machado - Currículum & Portafolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <span class="site-title" id="nav-brand-name"></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home" data-translate="nav.home">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about" data-translate="nav.about">Sobre mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education" data-translate="nav.education">Formación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience" data-translate="nav.experience">Experiencia/Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact" data-translate="nav.contact">Contacto</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-translate="nav.language">
+                            Idioma
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item lang-switch" data-lang="es" href="#">Español</a></li>
+                            <li><a class="dropdown-item lang-switch" data-lang="en" href="#">English</a></li>
+                            <li><a class="dropdown-item lang-switch" data-lang="jp" href="#">日本語</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <button id="theme-toggle" class="btn btn-outline-secondary">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero d-flex align-items-center justify-content-center text-center py-5">
+            <div class="container">
+                <img src="img/profile.jpg" alt="Foto de Perfil" class="profile-img mb-4">
+                <h1 class="display-4" id="hero-name"></h1>
+                <p class="lead" id="hero-role-text"></p>
+            </div>
+        </section>
+
+        <section id="about" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4" data-translate="about.title">Sobre mí</h2>
+                <p class="lead text-center" id="about-text"></p>
+                <div class="skills-container mt-4 text-center">
+                    <h3 data-translate="about.skills-title">Habilidades</h3>
+                    <div id="skills-list" class="d-flex flex-wrap justify-content-center gap-2">
+                        </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="bg-light py-5">
+            <div class="container">
+                <h2 class="text-center mb-4" data-translate="education.title">Formación Académica</h2>
+                <div id="education-list" class="row justify-content-center">
+                    </div>
+            </div>
+        </section>
+
+        <section id="experience" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4" data-translate="experience.title">Experiencia Laboral / Proyectos</h2>
+                <div id="projects-list" class="row justify-content-center">
+                    </div>
+            </div>
+        </section>
+
+        <section id="contact" class="bg-light py-5">
+            <div class="container">
+                <h2 class="text-center mb-4" data-translate="contact.title">Contacto</h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="card p-4 shadow-sm">
+                            <p class="text-center" data-translate="contact.intro">Si deseas ponerte en contacto, no dudes en enviarme un mensaje.</p>
+                            <div class="d-flex flex-column align-items-center mb-3">
+                                <a id="contact-email-link" href="#" class="btn btn-outline-primary mb-2">
+                                    <i class="fas fa-envelope me-2"></i><span id="contact-email"></span>
+                                </a>
+                                <button id="copy-email-btn" class="btn btn-sm btn-secondary" data-translate="contact.copy-email">Copiar Correo</button>
+                                <span id="copy-feedback" class="mt-2 text-success" style="display: none;">¡Copiado!</span>
+                            </div>
+                            <div id="social-links" class="d-flex justify-content-center gap-3 mb-4">
+                                </div>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="contactName" class="form-label" data-translate="contact.form.name">Nombre</label>
+                                    <input type="text" class="form-control" id="contactName" disabled>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="contactEmail" class="form-label" data-translate="contact.form.email">Email</label>
+                                    <input type="email" class="form-control" id="contactEmail" disabled>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="contactMessage" class="form-label" data-translate="contact.form.message">Mensaje</label>
+                                    <textarea class="form-control" id="contactMessage" rows="4" disabled></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100" disabled data-translate="contact.form.send">Enviar Mensaje</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-4 text-center">
+        <div class="container">
+            <p>&copy; 2025 <span id="footer-name"></span>. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
